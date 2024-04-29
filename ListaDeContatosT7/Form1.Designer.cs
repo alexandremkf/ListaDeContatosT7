@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.buttonCriarContato = new System.Windows.Forms.Button();
             this.listBoxContatos = new System.Windows.Forms.ListBox();
+            this.buttonLimparLista = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxNome
@@ -105,11 +106,23 @@
             this.listBoxContatos.Size = new System.Drawing.Size(187, 368);
             this.listBoxContatos.TabIndex = 8;
             // 
+            // buttonLimparLista
+            // 
+            this.buttonLimparLista.BackColor = System.Drawing.Color.IndianRed;
+            this.buttonLimparLista.Location = new System.Drawing.Point(231, 344);
+            this.buttonLimparLista.Name = "buttonLimparLista";
+            this.buttonLimparLista.Size = new System.Drawing.Size(42, 35);
+            this.buttonLimparLista.TabIndex = 9;
+            this.buttonLimparLista.Text = "🗑️";
+            this.buttonLimparLista.UseVisualStyleBackColor = false;
+            this.buttonLimparLista.Click += new System.EventHandler(this.buttonLimparLista_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 391);
+            this.Controls.Add(this.buttonLimparLista);
             this.Controls.Add(this.listBoxContatos);
             this.Controls.Add(this.buttonCriarContato);
             this.Controls.Add(this.label3);
@@ -120,6 +133,7 @@
             this.Controls.Add(this.textBoxNome);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,6 +148,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonCriarContato;
         private System.Windows.Forms.ListBox listBoxContatos;
+        private System.Windows.Forms.Button buttonLimparLista;
     }
 }
 
