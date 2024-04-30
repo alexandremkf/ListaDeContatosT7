@@ -37,6 +37,7 @@
             this.buttonCriarContato = new System.Windows.Forms.Button();
             this.listBoxContatos = new System.Windows.Forms.ListBox();
             this.buttonLimparLista = new System.Windows.Forms.Button();
+            this.buttonOrganiza = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxNome
@@ -103,13 +104,13 @@
             this.listBoxContatos.FormattingEnabled = true;
             this.listBoxContatos.Location = new System.Drawing.Point(282, 12);
             this.listBoxContatos.Name = "listBoxContatos";
-            this.listBoxContatos.Size = new System.Drawing.Size(187, 368);
+            this.listBoxContatos.Size = new System.Drawing.Size(187, 342);
             this.listBoxContatos.TabIndex = 8;
             // 
             // buttonLimparLista
             // 
             this.buttonLimparLista.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonLimparLista.Location = new System.Drawing.Point(231, 344);
+            this.buttonLimparLista.Location = new System.Drawing.Point(231, 319);
             this.buttonLimparLista.Name = "buttonLimparLista";
             this.buttonLimparLista.Size = new System.Drawing.Size(42, 35);
             this.buttonLimparLista.TabIndex = 9;
@@ -117,11 +118,23 @@
             this.buttonLimparLista.UseVisualStyleBackColor = false;
             this.buttonLimparLista.Click += new System.EventHandler(this.buttonLimparLista_Click);
             // 
+            // buttonOrganiza
+            // 
+            this.buttonOrganiza.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonOrganiza.Location = new System.Drawing.Point(150, 319);
+            this.buttonOrganiza.Name = "buttonOrganiza";
+            this.buttonOrganiza.Size = new System.Drawing.Size(75, 36);
+            this.buttonOrganiza.TabIndex = 10;
+            this.buttonOrganiza.Text = "Organizar";
+            this.buttonOrganiza.UseVisualStyleBackColor = false;
+            this.buttonOrganiza.Click += new System.EventHandler(this.buttonOrganiza_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 391);
+            this.ClientSize = new System.Drawing.Size(483, 363);
+            this.Controls.Add(this.buttonOrganiza);
             this.Controls.Add(this.buttonLimparLista);
             this.Controls.Add(this.listBoxContatos);
             this.Controls.Add(this.buttonCriarContato);
@@ -149,6 +162,7 @@
         private System.Windows.Forms.Button buttonCriarContato;
         private System.Windows.Forms.ListBox listBoxContatos;
         private System.Windows.Forms.Button buttonLimparLista;
+        private System.Windows.Forms.Button buttonOrganiza;
     }
 }
 
